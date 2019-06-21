@@ -8,7 +8,7 @@ function getSum(total, push) {
   return total + push;
 }
 
-const superFun = () => {
+const Fun = () => {
   if (fun.reduce(getSum) < 51) {
     fun.push(50);
     fun.reduce(getSum);
@@ -17,7 +17,7 @@ const superFun = () => {
   }
 };
 
-const slightlyFun = () => {
+const dull = () => {
   if (fun.reduce(getSum) < 100) {
     fun.push(2);
     fun.reduce(getSum);
@@ -27,12 +27,12 @@ const slightlyFun = () => {
 };
 
 const domStringBuilder = () => {
-  domString += '<button id="superFun">Big Fun</button>';
-  domString += '<button id="slightlyFun">No Fun</button>';
+  domString += '<button id="Fun">Fun</button>';
+  domString += '<button id="dull">dull</button>';
   domString += `<div id="fun">${fun}</div>`;
   util.printToDom('play', domString);
-  document.getElementById('superFun').addEventListener('click', superFun, false);
-  document.getElementById('slightlyFun').addEventListener('click', slightlyFun);
+  document.getElementById('Fun').addEventListener('click', Fun, false);
+  document.getElementById('dull').addEventListener('click', dull);
 };
 
 export default { domStringBuilder };
