@@ -16,7 +16,7 @@ const nap = () => {
   }
 };
 
-const deepSlumber = () => {
+const dream = () => {
   if (sleep.reduce(getSum) < 41) {
     sleep.push(60);
     sleep.reduce(getSum);
@@ -26,12 +26,12 @@ const deepSlumber = () => {
 };
 
 const domStringBuilder = () => {
-  domString += '<button id="nap">Quick Nap</button>';
-  domString += '<button id="deepSlumber">Good Sleep</button>';
+  domString += '<button id="nap">Nap</button>';
+  domString += '<button id="dream">dream</button>';
   domString += `<div id="rest">${sleep}</div>`;
   util.printToDom('sleep', domString);
   document.getElementById('nap').addEventListener('click', nap);
-  document.getElementById('deepSlumber').addEventListener('click', deepSlumber);
+  document.getElementById('dream').addEventListener('click', dream);
 };
 
 export default { domStringBuilder };
