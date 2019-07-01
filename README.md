@@ -4,6 +4,7 @@ Tamagotchi
 
 #Screen shot:
 
+![Tamagotchi](https://raw.githubusercontent.com/Lwamtekie/Tamagotchi/master/screenshot/screencapture-localhost-8080-2019-06-30-22_00_57.png)
 
 
 
